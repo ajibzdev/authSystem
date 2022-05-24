@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- css -->
+    <link rel="stylesheet" href="main.css">
+
+    <title>Signup</title>
+</head>
+<body>
+    <section class="signup">
+        <div class="left">
+            <div class="con">
+                <!-- Social media -->
+                <div class="soc">
+                    <h2>Sign up with</h2>
+                    <div class="icons">
+                        <div class="icon">
+                            <img src="image/icons8-google.svg" alt="google" title="google">
+                        </div>
+                        <div class="icon">
+                            <img src="image/icons8-facebook.svg" alt="facebook" title="facebook">
+                        </div>
+                        <div class="icon">
+                            <img src="image/icons8-linkedin.svg" alt="linkedIn" title="linkedIn">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Border -->
+                <div class="border">
+                    <div class="line"></div>
+                    <div class="text">
+                        <h4>OR</h4>
+                    </div>
+                    <div class="line"></div>
+                </div>
+
+                <!-- Form -->
+                <form name="Register form" autocomplete="off">
+                    <!-- Name -->
+                    <div class="name">
+                        <label for="name">Full name</label>
+                        <input type="text" name="name" id="name" placeholder="Full name" required>
+                    </div>
+
+                    <!-- email -->
+                    <div class="email">
+                        <label for="Email">Email</label>
+                        <input type="text" name="Email" id="email" placeholder="Email" required>
+                    </div>
+
+                    <!-- Date of birth -->
+                    <div class="dateof">
+                        <label for="dateof">Date of birth</label>
+                        <input type="date" name="dateof" id="dateof" required>
+                    </div>
+
+                    <!-- Password -->
+                    <div class="passdet">
+                        <!-- password -->
+                        <div class="password">
+                            <label for="password">password</label>
+                            <input type="password" name="password" id="password" placeholder="password" required>
+                        </div>
+
+                        <!-- none -->
+                        <div class="space"></div>
+
+                        <!-- confirm password -->
+                        <div class="confirmpass">
+                            <label for="confirmpass">Confirm password</label>
+                            <input type="password" name="confirmpass" id="confirmpass" placeholder="Confirm password" required>
+                        </div>
+                    </div>
+
+                    <!-- Send button -->
+                    <div class="sbtn">
+                        <p class="register" id="sbtn">Sign up</p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="right">
+            <!-- Illustration -->
+            <img src="image/undraw_access_account_re_8spm.svg" alt="illustration">
+            <div class="con">
+                <h2>Already have an account?</h2>
+                <p class="text">it's easy to start, just sign in straight away</p>
+                <!-- Send button -->
+                <div class="lbtn">
+                    <p class="login">Log in</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="anim">
+        <div class="load">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
+
+    <div class="popup" id="popup">
+        <div class="popup-box" id="popup-box">
+            <!-- <div class="icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div> -->
+            <div class="popup-message">
+                <h1 id="title">Successful</h1>
+                <p id="desc">Your registration was Successful</p>
+            </div>
+            <div class="ok">
+                <p class="ok-btn" id="okbtn">
+                    Great!
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script src="signup.js"></script>
+</body>
+</html>
